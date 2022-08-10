@@ -8,8 +8,8 @@ pipeline {
   		AWS_SECRET_ACCESS_KEY = credentials('osaid-aws-secret-access-key')
 		ARTIFACT_NAME = 'Dockerrun.aws.json'
 		AWS_S3_BUCKET = 'osaid-belt2-artifacts-123456'
-		AWS_EB_APP_NAME = 'osaid-Belt2-Artifacts-123'
-        AWS_EB_ENVIRONMENT_NAME = 'Osaidbelt2artifacts123-env'
+		AWS_EB_APP_NAME = 'osaid-Belt2-Artifacts'
+        AWS_EB_ENVIRONMENT_NAME = 'Osaidbelt2artifacts-env'
         AWS_EB_APP_VERSION = "${BUILD_ID}"
 	}
 
