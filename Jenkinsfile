@@ -18,7 +18,7 @@ pipeline {
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t oalmaymani/runaway .'
+				sh 'docker build -t oalmaymani/runaway:1.0 .'
 			}
 		}
 
