@@ -18,7 +18,7 @@ pipeline {
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t oalmaymani/runaway:1.0 .'
+				sh 'docker build -t oalmaymani/runaway .'
 			}
 		}
 
@@ -32,7 +32,7 @@ pipeline {
 		stage('Push') {
 
 			steps {
-				sh 'docker push oalmaymani/runaway:1.0'
+				sh 'docker push oalmaymani/runaway'
 			}
 		}
 
